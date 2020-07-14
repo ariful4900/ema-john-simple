@@ -1,0 +1,13 @@
+@import '../../assets/scss/_variables.scss';
+
+.topFixed{
+    position:fixed;
+    top:100px;
+    margin:0 auto;
+    width:25%;
+}
+.summary-heading{
+    text-align: center;
+    width:100%;
+    display: block;
+}
