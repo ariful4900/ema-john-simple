@@ -50,7 +50,7 @@ const Review = () => {
             }
             {
                 thankyou
-            }
+            }     
            </div>
            <div className="cart-container">
                <Cart cart={cart}>
