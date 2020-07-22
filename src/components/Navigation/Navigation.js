@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     const navLink =[
-        {title:'Shop', path:"/"},
-        {title:'Order Review', path:"/order"},
-        {title:'Manage Inventory Here', path:"/manage"}
+        {title:'Shop', path:"/shop"},
+        {title:'Order Review', path:"/review"},
+        {title:'Manage Inventory Here', path:"/inventory"}
     ];
     return (
         <nav>

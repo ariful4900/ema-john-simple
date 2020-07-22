@@ -2,12 +2,14 @@ import React from 'react';
 
 import './Cart.scss';
 
-const Cart = ({ cart }) => {
+const Cart = (props) => {
     // const totalPrice = cart.reduce((total, prd) => total + prd.price, 0)
+    const { cart } = props;
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        total = total + product.price;
+        total = total + product.price * product.quantity;
+        // debugger
 
     }
     // const totalPrice = formatNumber(total);
@@ -43,6 +45,10 @@ const Cart = ({ cart }) => {
                 <p><small>Shipping : {formatNumber(shipping)}</small></p>
                 <p><small>Tax + VAT: {formatNumber(tax)}</small></p>
                 <p>total price: {formatNumber(totalAmount)}</p>
+                <br />
+                {
+                    props.children
+                }
             </div>
         </div>
     );
